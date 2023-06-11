@@ -1,0 +1,210 @@
+.book{
+    background-image: url(/YARAY_HOTEL/images/silhouette-palm-tree-with-umbrella.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    /* background-color: rgba(128, 128, 128, 0.34); */
+    /* background-color: #ffffff; */
+
+ 
+}
+.also_dark{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: .5rem;
+    padding: 5%;
+    background-color: rgba(0, 0, 0, 0.217);
+
+}
+.includes p{
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.includes{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}.includes i{
+    font-size: 3.5rem;
+    color: rgb(255, 255, 255);
+}
+.Food , .Pool , .Beach-View{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 200px;
+}
+.booking_form select option{
+    color: #ffffff;
+    background-color: rgba(253, 253, 253, 0.312);
+}
+#capter-top{
+    margin-top: 15px;
+
+}
+#capter-last{
+    margin-bottom: 15px;
+}
+.booking_form{
+    background-color:rgba(0, 0, 0, 0.357);
+    /* backdrop-filter: blur(8px); */
+    width: 100%;
+    border: solid white 1px;
+    border-radius: 5px;
+    padding: 20px 5px 15px 5px;
+}
+.booking_form label{
+    font-size: 1.1rem;
+    color: white;
+    margin-left: 4px;
+}
+.inputbox{
+    position: relative;
+    margin-bottom: 18px;
+}
+#phone_number{
+    height: 47px;
+}
+.inputbox1 select{
+    font-size: 1.1rem;
+}
+.inputbox input{
+    outline: none;
+    width: 100%;
+    font-size: 1.1rem;
+    height: 2.5rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px rgb(255, 255, 255);
+    border-bottom-left-radius: -10px;
+}
+.inputbox label{
+    position: absolute;
+    left: 5px;
+    top: 20%;
+    pointer-events: none;
+    color: rgba(255, 255, 255, 0.661);
+    transition: all 0.3s;
+}
+.cin{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.cin input{
+    outline: none;
+    width: 50%;
+    font-size: 1.1rem;
+    height: 2.5rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px rgb(255, 255, 255);
+    border-bottom-left-radius: -10px;
+}
+
+.cin label{
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    pointer-events: none;
+    color: rgba(255, 255, 255, 0.661);
+    transition: all 0.3s;
+}
+.cin input::placeholder{
+    color: #dadada;
+}
+.cin input:focus ~ label,
+.cin input:valid ~ label{
+    transform: translateY(-10%) translateX(-5%);
+    color: white;
+}
+.inputbox input:focus ~ label,
+.inputbox input:valid ~ label{
+    transform: translateY(-150%) translateX(-5%);
+    color: white;
+}
+
+
+.capter{
+    width: 100%;
+    display: flex;
+    gap: 2%;
+}
+.inputbox,.inputbox1{
+    width: 49%;
+}
+
+.inputbox1{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 18px;
+}
+
+.inputbox1 input{
+    height: 2.4rem;
+    outline: none;
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid white 1px;
+    color: white;
+
+}
+.inputbox1 select{
+    border: none;
+    outline: none;
+    border-bottom: solid white 1px;
+    background-color: transparent;
+    /* border-radius: 0; */
+}
+.booking_form form select option{
+    background-color: rgba(0, 0, 0, 0.389);
+    color: #ffffff;
+}
+.bttn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.btn{
+    
+    border: solid rgb(255, 255, 255) ;
+    cursor: pointer; 
+    border-width: 1px;
+    background-color: rgba(0, 0, 0, 0.217);
+    color: #ffffff;
+    font-size: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    padding: .5rem 1.6rem .5rem 1.6rem;
+}
+
+@media screen and (max-width:700px){
+    .capter{
+        flex-direction: column;
+        align-items: center;
+    }
+    .inputbox , .inputbox1,.cin input{
+        width: 95%;
+    }
+}
+

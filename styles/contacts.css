@@ -1,0 +1,124 @@
+.contact{
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+
+
+}
+.contact h2{
+    text-align: center;
+    font-size: 4rem;
+    font-family: Great Vibes;
+    margin: 3rem 0;
+}
+
+.holder{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+textarea{
+    width: 97%;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+.input-box{
+    width: 100%;
+    color: #ffffff;
+    font-size: 1.1rem;
+    display: flex;
+    gap: 5px;
+
+
+}
+
+.input-box input , textarea{
+    background-color: rgba(0, 0, 0, 0.415) ;
+    backdrop-filter: blur(10px);
+    outline: none;
+    color: #ffffff;
+    border: solid 1px white;
+
+}
+.input-box input::placeholder , textarea::placeholder{
+    color: #ffffff;
+}
+.input-box input{
+    width: 47%;
+    height: 2rem;
+    border-radius: 1rem;
+    margin-bottom: .7rem;
+    padding: 5px;
+    border: solid rgba(255, 255, 255, 0.5) 1px;
+}
+textarea{
+    border-radius: 1rem ;
+    padding: 5px;
+    resize: none;
+    border: solid rgba(255, 255, 255, 0.5) 1px;
+
+}
+.btn{
+    border: #ffffff solid 1px;
+    cursor: pointer; 
+    background-color: rgba(0, 0, 0, 0.217);
+    color: #ffffff;
+    font-size: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    padding: .5rem 1.6rem .5rem 1.6rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+/* the footer  */
+
+
+
+@media screen and (max-width:910px){
+    .input-box{
+        gap: 5px;
+    }
+    .holder{
+        width: 70%;
+    }
+    .contact h2{
+        font-size: 3rem;
+    }
+    
+}
+@media screen and (max-width:450px) {
+    .input-box{
+        flex-direction: column;
+        margin-bottom: 4px;
+        margin-left: -10px;
+    }
+    .input-box input{
+        width: 90%;
+        margin-bottom: 4px;
+
+ 
+    }
+    .contact h2{
+        font-size: 2.5rem;
+    }
+    
+    .holder{
+        width: 85%;
+        padding-left: 2.5rem;
+    }
+    textarea{
+        padding-right: 5px;
+        width: 90%;
+        margin-left: -8px;
+    }
+    
+}
+

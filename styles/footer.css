@@ -1,0 +1,109 @@
+footer{
+    background-image: url(/YARAY_HOTEL/images/footer_background.png);
+    background-position: end;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* background-color: rgb(239, 239, 239); */
+}
+footer p{
+    font-size: 1.2rem;
+}
+footer img{
+    margin-top: -3rem;
+    margin-right: -3rem;
+
+    height: 300px;
+}
+.dark_footer{
+    padding: 2rem 2rem 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000bd;
+    height: 100%;
+    width: 100%;
+}
+.socials p{
+    color: #ffffff;
+}
+.socials{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+.half1,.half2{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 100;
+}
+.unit1,.unit2{
+    display: flex;
+    gap: 1rem;
+}
+.unit2{
+    justify-content: end;
+}
+.unit1 i ,.unit2 i{
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.copy-right{
+    height: 100%;
+    background-color: #000000bd;
+    margin-top: 0rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 1rem;
+}
+.copy-right p{
+    color: #ffffff;
+}
+.copy-right a{
+    position: absolute;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+hr{
+    border: solid #ffffff 1px;
+
+
+}
+@media screen and (max-width:883px){
+    footer img{
+        margin-right: -1rem;
+    }
+}
+@media screen and (max-width:810px){
+    footer img{
+        margin-right: -3rem;
+    }
+}
+@media screen and (max-width:775px){
+    .dark_footer{
+        flex-direction: column;
+    }
+    .logo_holder{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .half2{
+        margin-bottom: 3rem
+    }
+}
+@media screen and (max-width:540px){
+    .logo_holder img{
+        margin-left: -2rem;
+    }
+}
